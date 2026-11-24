@@ -4,27 +4,20 @@
  */
 package schoolmanagementsystem;
 
-/**
- *
- * @author user
- */
+import model.Department;
+import model.Employee;
+import model.ManagerType;
+
 public class SchoolManagementSystem {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-       
-    
-    
-    
+        System.out.println("=================================");
+        System.out.println("FIRST STEPS CLINICAL SCHOOL");
+        System.out.println("EMPLOYEE MANAGEMENT");
+        System.out.println("=================================");
 
-System.out.println("==================================");
-System.out.println("     FIRST STEPS CLINICAL SCHOOL");
-System.out.println("       EMPLOYEE MANAGEMENT");
-System.out.println("==================================");
-System.out.println("Welcome to our school system!");
-
-    
-}
+        // Temporary test of the model
+        Employee test = new Employee("Test Person", ManagerType.TEACHER, Department.TEACHING);
+        System.out.println(test);
+    }
 }
