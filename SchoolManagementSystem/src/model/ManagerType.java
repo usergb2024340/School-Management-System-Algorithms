@@ -4,17 +4,12 @@
  */
 package model;
 
-/**
- *
- * @author user
- */
-
 public enum ManagerType {
     PRINCIPAL("Principal"),
     VICE_PRINCIPAL("Vice Principal"),
     HEAD_OF_DEPARTMENT("Head of Department"),
     TEAM_LEAD("Team Lead"),
-    TEACHER("Teacher");
+    STAFF("Staff");
 
     private final String label;
 
@@ -35,4 +30,3 @@ public enum ManagerType {
     @Override
     public String toString() { return label; }
 }
-    

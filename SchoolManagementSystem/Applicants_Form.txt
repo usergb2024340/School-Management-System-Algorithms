@@ -1,0 +1,47 @@
+First name,Last name,Gender,Email,Salary,Department,Position,Job title,Company
+Kate,Summer,Female,kate.summer@firststeps.school,20000.00,IT Department,senior,ICT Teacher,First Steps Clinical School
+Ken,Winter,Male,ken.winter@firststeps.school,15000.00,IT Department,middle,IT Support Officer,First Steps Clinical School
+James,Anderson,Male,james.anderson@firststeps.school,80000.00,Admissions,,Head of Department,First Steps Clinical School
+Sarah,Johnson,Female,sarah.johnson@firststeps.school,3500.50,Human Resources,,Team Lead,First Steps Clinical School
+John,Smith,Male,john.smith@firststeps.school,48000.00,Finance,,Vice Principal,First Steps Clinical School
+Emily,Brown,Female,emily.brown@firststeps.school,2700.75,Marketing and Communications,middle,Marketing Officer,First Steps Clinical School
+Michael,Williams,Male,michael.williams@firststeps.school,5500.30,IT Department,intern,IT Support Assistant,First Steps Clinical School
+Sophia,Taylor,Female,sophia.taylor@firststeps.school,4400.20,IT Department,junior,IT Support Officer,First Steps Clinical School
+David,Wilson,Male,david.wilson@firststeps.school,51000.00,IT Department,senior,Systems Administrator,First Steps Clinical School
+Olivia,Martinez,Female,olivia.martinez@firststeps.school,3200.45,Finance,contract,Bookkeeper,First Steps Clinical School
+Ethan,Anderson,Male,ethan.anderson@firststeps.school,6200.00,Finance,senior,Finance Analyst,First Steps Clinical School
+Mia,Clark,Female,mia.clark@firststeps.school,4800.35,School Operations,middle,Operations Officer,First Steps Clinical School
+John,Anderson,Male,john.anderson@firststeps.school,60000.00,Admissions,,Head of Department,First Steps Clinical School
+Sam,Johnson,Female,sam.johnson@firststeps.school,3500.50,Human Resources,,Head of Department,First Steps Clinical School
+John,Brown,Male,john.brown@firststeps.school,9000.00,Finance,,Head of Department,First Steps Clinical School
+Emma,Brown,Female,emma.brown@firststeps.school,2200.75,Marketing and Communications,junior,Marketing Officer,First Steps Clinical School
+Max,Williams,Male,max.williams@firststeps.school,5200.30,IT Department,intern,IT Support Assistant,First Steps Clinical School
+Sonya,Taylor,Female,sonya.taylor@firststeps.school,4200.20,Student Services,junior,Student Services Officer,First Steps Clinical School
+Denis,Wilson,Male,denis.wilson@firststeps.school,61000.00,IT Department,,Head of Department,First Steps Clinical School
+Olga,Martinez,Female,olga.martinez@firststeps.school,3300.45,Finance,contract,Bookkeeper,First Steps Clinical School
+Ed,Anderson,Male,ed.anderson@firststeps.school,6200.00,Finance,senior,Finance Analyst,First Steps Clinical School
+Milla,Clark,Female,milla.clark@firststeps.school,4900.35,School Operations,middle,Operations Officer,First Steps Clinical School
+Sophia,Lopez,Female,sophia.lopez@firststeps.school,2200.00,Admissions,junior,Admissions Officer,First Steps Clinical School
+Benjamin,Hill,Male,benjamin.hill@firststeps.school,27000.00,School Operations,,Principal,First Steps Clinical School
+Jessica,Lee,Female,jessica.lee@firststeps.school,70000.00,IT Department,,Vice Principal,First Steps Clinical School
+Daniel,Walker,Male,daniel.walker@firststeps.school,5300.20,School Operations,intern,Office Assistant,First Steps Clinical School
+Eleanor,Harris,Female,eleanor.harris@firststeps.school,3100.75,Marketing and Communications,contract,Marketing Officer,First Steps Clinical School
+Chris,Evans,Male,chris.evans@firststeps.school,2200.50,Student Services,intern,Student Services Assistant,First Steps Clinical School
+Alex,Turner,Male,alex.turner@firststeps.school,4800.40,IT Department,middle,Network Technician,First Steps Clinical School
+Nina,Holmes,Female,nina.holmes@firststeps.school,3300.65,Finance,contract,Finance Analyst,First Steps Clinical School
+Victor,Stewart,Male,victor.stewart@firststeps.school,5500.80,IT Department,senior,IT Support Officer,First Steps Clinical School
+Lucy,Bennett,Female,lucy.bennett@firststeps.school,2700.45,Human Resources,junior,HR Officer,First Steps Clinical School
+Oscar,Reed,Male,oscar.reed@firststeps.school,4400.35,Finance,contract,Bookkeeper,First Steps Clinical School
+Lana,Parker,Female,lana.parker@firststeps.school,6200.00,Marketing and Communications,senior,Communications Officer,First Steps Clinical School
+Harry,Cooper,Male,harry.cooper@firststeps.school,5100.90,Admissions,junior,Admissions Officer,First Steps Clinical School
+Isla,Fisher,Female,isla.fisher@firststeps.school,4100.60,School Operations,middle,Operations Officer,First Steps Clinical School
+Leo,Wright,Male,leo.wright@firststeps.school,8000.25,IT Department,senior,Systems Administrator,First Steps Clinical School
+Eva,Mitchell,Female,eva.mitchell@firststeps.school,2500.45,Student Services,junior,Student Services Officer,First Steps Clinical School
+Ryan,Carter,Male,ryan.carter@firststeps.school,5200.80,School Operations,middle,Facilities Officer,First Steps Clinical School
+Holly,Brooks,Female,holly.brooks@firststeps.school,2800.35,IT Department,junior,IT Support Officer,First Steps Clinical School
+Daniel,Gray,Male,daniel.gray@firststeps.school,3500.60,Admissions,,Team Lead,First Steps Clinical School
+Layla,Jones,Female,layla.jones@firststeps.school,1400.50,Finance,junior,Bookkeeper,First Steps Clinical School
+Sebastian,Morgan,Male,sebastian.morgan@firststeps.school,2900.40,Human Resources,contract,HR Officer,First Steps Clinical School
+Elena,Scott,Female,elena.scott@firststeps.school,4600.30,IT Department,senior,ICT Teacher,First Steps Clinical School
+Finn,Walker,Male,finn.walker@firststeps.school,2200.45,Student Services,intern,Student Services Assistant,First Steps Clinical School
+Amelia,King,Female,amelia.king@firststeps.school,5200.60,Marketing and Communications,middle,Marketing Officer,First Steps Clinical School

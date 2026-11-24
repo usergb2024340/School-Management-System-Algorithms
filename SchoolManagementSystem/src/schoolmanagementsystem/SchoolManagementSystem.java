@@ -4,9 +4,10 @@
  */
 package schoolmanagementsystem;
 
-import model.Department;
+import java.io.IOException;
+import java.util.List;
 import model.Employee;
-import model.ManagerType;
+import util.FileLoader;
 
 public class SchoolManagementSystem {
 
@@ -16,8 +17,13 @@ public class SchoolManagementSystem {
         System.out.println("EMPLOYEE MANAGEMENT");
         System.out.println("=================================");
 
-        // Temporary test of the model
-        Employee test = new Employee("Test Person", ManagerType.TEACHER, Department.TEACHING);
-        System.out.println(test);
+        // Temporary test (will be replaced by the controller in commit 5)
+        try {
+            List<Employee> list = FileLoader.load("Applicants_Form.txt");
+            System.out.println("File read successfully: " + list.size() + " records");
+            System.out.println(list.get(2)); // James Anderson
+        } catch (IOException e) {
+            System.out.println("Could not read file: " + e.getMessage());
+        }
     }
 }

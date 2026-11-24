@@ -4,18 +4,14 @@
  */
 package model;
 
-/**
- *
- * @author user
- */
-
-
 public enum Department {
-    ADMINISTRATION("Administration"),
-    IT("IT"),
-    HR("HR"),
+    ADMISSIONS("Admissions"),
     FINANCE("Finance"),
-    TEACHING("Teaching");
+    HUMAN_RESOURCES("Human Resources"),
+    IT("IT Department"),
+    MARKETING("Marketing and Communications"),
+    OPERATIONS("School Operations"),
+    STUDENT_SERVICES("Student Services");
 
     private final String label;
 
@@ -23,6 +19,7 @@ public enum Department {
 
     public String getLabel() { return label; }
 
+    // Returns null if the text doesn't match any department
     public static Department fromString(String text) {
         for (Department d : values()) {
             if (d.label.equalsIgnoreCase(text.trim()) || d.name().equalsIgnoreCase(text.trim())) {
@@ -34,6 +31,4 @@ public enum Department {
 
     @Override
     public String toString() { return label; }
-
-    
 }

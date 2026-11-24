@@ -4,12 +4,6 @@
  */
 package model;
 
-/**
- *
- * @author user
- */
-
-
 public class Employee {
     private final String name;
     private final ManagerType managerType;
