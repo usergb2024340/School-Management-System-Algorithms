@@ -34,7 +34,21 @@ public class ConsoleView {
             System.out.println((i + 1) + ". " + list.get(i).getName());
         }
     }
+    public String askName() {
+        System.out.print("Enter the full name to search for: ");
+        return scanner.nextLine().trim();
+    }
 
+    public void showSearchResult(Employee employee, String searchedName) {
+        if (employee == null) {
+            System.out.println("No employee found with the name: " + searchedName);
+        } else {
+            System.out.println("Employee found:");
+            System.out.println("Name:         " + employee.getName());
+            System.out.println("Manager Type: " + employee.getManagerType());
+            System.out.println("Department:   " + employee.getDepartment());
+        }
+    }
     public void showMenu() {
         System.out.println();
         System.out.println("Do You wish to SORT or SEARCH:");

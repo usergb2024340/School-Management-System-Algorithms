@@ -7,16 +7,18 @@ package controller;
 import java.io.IOException;
 import java.util.List;
 import model.Employee;
+import util.BinarySearcher;
 import util.FileLoader;
+import util.MergeSorter;
 import view.ConsoleView;
 import view.MenuOption;
-import util.MergeSorter;
 
 public class AppController {
 
     private final ConsoleView view = new ConsoleView();
-    private List<Employee> sortedEmployees;
     private List<Employee> employees;
+    private List<Employee> sortedEmployees;
+
     public void run() {
         view.showBanner();
         loadEmployees();
@@ -33,9 +35,14 @@ public class AppController {
                     view.showMessage("First 20 names in alphabetical order:");
                     view.showEmployees(sortedEmployees, 20);
                     break;
-                case SEARCH:
+                case SEARCH: {
                     view.showMessage("SEARCH selected");
+                    ensureSorted();
+                    String name = view.askName();
+                    Employee found = BinarySearcher.search(sortedEmployees, name);
+                    view.showSearchResult(found, name);
                     break;
+                }
                 case ADD_RECORDS:
                     view.showMessage("ADD RECORDS selected");
                     break;
@@ -60,6 +67,13 @@ public class AppController {
             } catch (IOException e) {
                 view.showMessage("Could not read file: " + e.getMessage());
             }
+        }
+    }
+
+    // The search needs a sorted list, so sort first if the user hasn't yet
+    private void ensureSorted() {
+        if (sortedEmployees == null) {
+            sortedEmployees = MergeSorter.sort(employees);
         }
     }
 }
