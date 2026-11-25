@@ -10,12 +10,13 @@ import model.Employee;
 import util.FileLoader;
 import view.ConsoleView;
 import view.MenuOption;
+import util.MergeSorter;
 
 public class AppController {
 
     private final ConsoleView view = new ConsoleView();
+    private List<Employee> sortedEmployees;
     private List<Employee> employees;
-
     public void run() {
         view.showBanner();
         loadEmployees();
@@ -28,6 +29,9 @@ public class AppController {
             switch (choice) {
                 case SORT:
                     view.showMessage("SORT selected");
+                    sortedEmployees = MergeSorter.sort(employees);
+                    view.showMessage("First 20 names in alphabetical order:");
+                    view.showEmployees(sortedEmployees, 20);
                     break;
                 case SEARCH:
                     view.showMessage("SEARCH selected");

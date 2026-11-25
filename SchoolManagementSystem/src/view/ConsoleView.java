@@ -4,7 +4,9 @@
  */
 package view;
 
+import java.util.List;
 import java.util.Scanner;
+import model.Employee;
 
 public class ConsoleView {
 
@@ -24,6 +26,13 @@ public class ConsoleView {
 
     public void showMessage(String message) {
         System.out.println(message);
+    }
+
+    public void showEmployees(List<Employee> list, int limit) {
+        int count = Math.min(limit, list.size());
+        for (int i = 0; i < count; i++) {
+            System.out.println((i + 1) + ". " + list.get(i).getName());
+        }
     }
 
     public void showMenu() {
