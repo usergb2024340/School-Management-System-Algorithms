@@ -5,8 +5,11 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import model.Department;
 import model.Employee;
+import model.ManagerType;
 import util.BinarySearcher;
 import util.FileLoader;
 import util.MergeSorter;
@@ -18,6 +21,7 @@ public class AppController {
     private final ConsoleView view = new ConsoleView();
     private List<Employee> employees;
     private List<Employee> sortedEmployees;
+    private final List<Employee> newRecords = new ArrayList<>();
 
     public void run() {
         view.showBanner();
@@ -45,6 +49,7 @@ public class AppController {
                 }
                 case ADD_RECORDS:
                     view.showMessage("ADD RECORDS selected");
+                    addRecord();
                     break;
                 case CREATE_BINARY_TREE:
                     view.showMessage("CREATE A BINARY TREE selected");
@@ -75,5 +80,37 @@ public class AppController {
         if (sortedEmployees == null) {
             sortedEmployees = MergeSorter.sort(employees);
         }
+    }
+
+    // Asks for a new employee, validates the choices and stores the record in memory
+    private void addRecord() {
+        String name = view.askNewName();
+
+        if (nameExists(name)) {
+            view.showMessage("An employee with that name already exists. Record not added.");
+            return;
+        }
+
+        ManagerType managerType = view.askManagerType();
+        Department department = view.askDepartment();
+
+        Employee employee = new Employee(name, managerType, department);
+        employees.add(employee);
+        newRecords.add(employee);
+
+        // Keep the sorted list up to date so the search still works
+        sortedEmployees = MergeSorter.sort(employees);
+
+        view.showMessage("Record added successfully.");
+        view.showNewRecords(newRecords);
+    }
+
+    private boolean nameExists(String name) {
+        for (Employee e : employees) {
+            if (e.getName().equalsIgnoreCase(name)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
