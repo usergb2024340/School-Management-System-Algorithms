@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import model.Department;
 import model.Employee;
+import model.EmployeeTree;
 import model.ManagerType;
 import util.BinarySearcher;
 import util.FileLoader;
@@ -17,6 +18,8 @@ import view.ConsoleView;
 import view.MenuOption;
 
 public class AppController {
+
+    private static final int TREE_SIZE = 20;
 
     private final ConsoleView view = new ConsoleView();
     private List<Employee> employees;
@@ -53,6 +56,7 @@ public class AppController {
                     break;
                 case CREATE_BINARY_TREE:
                     view.showMessage("CREATE A BINARY TREE selected");
+                    buildAndShowTree();
                     break;
                 case EXIT:
                     view.showMessage("Goodbye!");
@@ -112,5 +116,29 @@ public class AppController {
             }
         }
         return false;
+    }
+
+    // Builds the hierarchy tree from TREE_SIZE employees, most senior first,
+    // inserting them level by level, then shows the result
+    private void buildAndShowTree() {
+        if (employees.size() < TREE_SIZE) {
+            view.showMessage("At least " + TREE_SIZE + " records are needed to build the tree.");
+            return;
+        }
+
+        EmployeeTree tree = new EmployeeTree();
+        int inserted = 0;
+
+        // ManagerType.values() is in rank order: Principal first, Staff last
+        for (ManagerType type : ManagerType.values()) {
+            for (Employee e : employees) {
+                if (e.getManagerType() == type && inserted < TREE_SIZE) {
+                    tree.insert(e);
+                    inserted++;
+                }
+            }
+        }
+
+        view.showTree(tree.levelOrder(), tree.height(), tree.size());
     }
 }
